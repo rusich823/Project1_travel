@@ -1,5 +1,5 @@
 #pragma once
 
-int** createMatrix(int nCities);
-void destroyMatrix(int** matrix, int nCities);
-void fillRandomMatrix(int** matrix, int nCities, int minCost, int maxCost);
+std::vector<std::vector<int>> Matr_Create(int nCities);
+void fillRandomMatrix(std::vector<std::vector<int>>& matrix, int minCost, int maxCost);
+bool isVisited(const std::vector<int>& path, int city);
